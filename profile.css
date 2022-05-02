@@ -26,6 +26,7 @@ input {
   height: 400px;
   border: 1px solid blue;
 }
+#weightInput,
 #exercise {
   border-radius: 25px;
   width: 100%;
@@ -59,6 +60,7 @@ input {
   border-right: 2px solid #3581b8;
   height: 30%;
 }
+#addWeightButton,
 #addButton,
 #followButton {
   background: #758ecd;
@@ -75,6 +77,7 @@ input {
 
   font-size: 25px;
 }
+#addWeightButton,
 #addButton {
   height: 50px;
   width: 80%;
