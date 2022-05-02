@@ -59,6 +59,7 @@ input {
   border-right: 2px solid #3581b8;
   height: 30%;
 }
+#addButton,
 #followButton {
   background: #758ecd;
   color: #f3f8f2;
@@ -73,6 +74,10 @@ input {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 
   font-size: 25px;
+}
+#addButton {
+  height: 50px;
+  width: 80%;
 }
 #recomendationDiv {
   height: 100%;
@@ -115,6 +120,12 @@ input {
   color: #758ecd;
   background-color: white;
 }
+#dropDownMenu {
+  color: #758ecd;
+}
+#addExerciseFormContainer {
+  padding-bottom: 20px;
+}
 
 .profileInfo {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -133,12 +144,10 @@ input {
   width: 50px;
   float: right;
 }
-
 .member-overlap-item {
   margin-right: -10px;
   border: 2px solid #fff;
 }
-
 .bigText {
   font-size: 40px;
   color: #758ecd;
