@@ -158,13 +158,42 @@
           </div>
         </div>
         <div class="col-xl-7 h-100" id="right">
-          <div>History</div>
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-sm-4">Exercise</div>
-              <div class="col-sm-4">Location</div>
-              <div class="col-sm-4">People</div>
-              <div id="exerciseList"></div>
+          <div class="bigText">History</div>
+          <div class="container py-0 my-0" id="historyContainer">
+            <div
+              class="row align-items-center my-0"
+              style="border: 1px solid green"
+            >
+              <div class="col-sm-1"></div>
+              <div class="col-sm-4 historyText">Exercise</div>
+              <div class="col-sm-3 historyText">Location</div>
+              <div class="col-sm-3 historyText">People</div>
+              <div class="col-sm-1"></div>
+            </div>
+            <div class="row align-items-center" id="historyRow">
+              <div id="exerciseList" class="container align-items-center">
+                <div
+                  class="row align-items-center my-0"
+                  style="border: 1px solid green"
+                >
+                  <!-- TODO: cahnge to shape with color property, js or php? -->
+                  <div class="col-sm-1">
+                    <button id="statusButton"></button>
+                  </div>
+                  <div class="col-sm-4 historyText">
+                    <p class="exerciseInfo">Bicep Curls</p>
+                  </div>
+                  <div class="col-sm-3 historyText">
+                    <p class="exerciseInfo">Home</p>
+                  </div>
+                  <div class="col-sm-3 historyText">
+                    <p class="exerciseInfo">2</p>
+                  </div>
+                  <div class="col-sm-1">
+                    <button id="statusButton"></button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div>
