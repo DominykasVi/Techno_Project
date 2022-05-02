@@ -1,0 +1,146 @@
+html,
+body {
+  background-color: #f3f8f2;
+  height: 100%;
+}
+#left {
+  border: 1px solid black;
+}
+#right {
+  border: 1px solid green;
+}
+div {
+  color: red;
+}
+input {
+  max-width: 100%;
+  max-height: 100%;
+}
+#profile_pic {
+  border-radius: 50%;
+  max-width: 100%;
+  max-height: 100%;
+}
+#exerciseList {
+  width: 100%;
+  height: 400px;
+  border: 1px solid blue;
+}
+#exercise {
+  border-radius: 25px;
+  width: 100%;
+  height: 50px;
+  padding-left: 0px;
+  margin-left: 0px;
+  border: 1px solid #707070;
+  text-align: center;
+}
+/* Profile */
+#profileContainer {
+  padding: 0px;
+}
+
+#profileTop {
+  border-right: 2px solid #3581b8;
+  height: 33%;
+}
+#profileSocial {
+  border-right: 2px solid #3581b8;
+  height: 12%;
+}
+#profileCenter {
+  border-right: 2px solid #3581b8;
+  border-top: 2px solid #3581b8;
+  border-bottom: 2px solid #3581b8;
+
+  height: 25%;
+}
+#profileBottom {
+  border-right: 2px solid #3581b8;
+  height: 30%;
+}
+#followButton {
+  background: #758ecd;
+  color: #f3f8f2;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border-radius: 25px;
+  width: 100%;
+  height: 40px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+
+  font-size: 25px;
+}
+#recomendationDiv {
+  height: 100%;
+  margin-bottom: 12px;
+}
+#recomendationText {
+  text-align: center;
+  color: #707070;
+  font-size: 20px;
+}
+#recomendedWeight {
+  text-align: center;
+  position: relative;
+  top: -30px;
+  left: 0px;
+  color: #707070;
+  font-size: 35px;
+}
+#followDiv {
+  margin-bottom: 13px;
+}
+#statusButton {
+  background-color: white;
+  border: 1px solid #707070;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
+#dropdownButton {
+  border-radius: 25px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #707070;
+  text-align: center;
+  color: #758ecd;
+  background-color: white;
+}
+
+.profileInfo {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 37px;
+  background-color: #758ecd;
+  color: #f3f8f2;
+  border-radius: 25px;
+  width: 80%;
+  height: 50px;
+  text-align: left;
+  padding-left: 15px;
+}
+.default-avatar,
+.member-overlap-item {
+  height: 50px;
+  width: 50px;
+  float: right;
+}
+
+.member-overlap-item {
+  margin-right: -10px;
+  border: 2px solid #fff;
+}
+
+.bigText {
+  font-size: 40px;
+  color: #758ecd;
+  padding-left: 15px;
+}
