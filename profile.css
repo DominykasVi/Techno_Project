@@ -87,6 +87,7 @@ input {
 #followDiv {
   margin-bottom: 13px;
 }
+#status,
 #statusButton {
   background-color: white;
   border: 1px solid #707070;
@@ -98,6 +99,15 @@ input {
   font-size: 16px;
   margin: 4px 2px;
   border-radius: 50%;
+}
+#status {
+  background-color: #32cd32;
+}
+#exerciseImage {
+  width: 150%;
+  height: auto;
+  border-radius: 50%;
+  border: 1px solid #707070;
 }
 #dropdownButton {
   border-radius: 25px;
@@ -123,7 +133,16 @@ input {
 #exerciseList {
   width: 100%;
   height: 90%;
-  border: 1px solid blue;
+}
+#historyButton {
+  border: 1px solid #707070;
+  background-color: #758ecd;
+  height: 50px;
+  width: 60%;
+  color: white;
+  text-align: center;
+  position: relative;
+  font-size: 30px;
 }
 
 .profileInfo {
@@ -158,14 +177,16 @@ input {
   color: #758ecd;
   text-align: center;
 }
+
 .exerciseInfo {
   margin-top: 15px;
   text-align: center;
   color: #707070;
-  height: 100%;
+  height: 40px;
   background-color: #ffffff;
   border-radius: 25px;
   vertical-align: center;
   border: 1px solid #707070;
   font-size: 22px;
+  padding: 3px;
 }
