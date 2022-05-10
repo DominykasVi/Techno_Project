@@ -11,7 +11,7 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="profile.css" />
+    <link rel="stylesheet" type="text/css" href="profile copy.css" />
   </head>
   <body>
     <script
@@ -97,9 +97,11 @@
             <div class="row align-items-center" id="profileCenter">
               <p class="bigText">Add exercise</p>
               <div class="container" id="addExerciseFormContainer">
-                <div class="row align-items-center">
-                  <div class="col-lg-2">
-                    <button id="statusButton" onclick="statusPress()"></button>
+                <div class="row align-items-center" >
+                  <div class="col-lg-2" >
+                        <button class="dropbtn" onclick="showButton()"></button>
+
+                    <!-- <button id="statusButton" onclick="statusPress()"></button> -->
                   </div>
                   <div class="col-lg-4">
                     <input type="text" id="exercise" />
@@ -135,6 +137,17 @@
                   </div>
                   <div class="col-lg-3">
                     <button type="button" id="addButton">Add</button>
+                  </div>
+                  <div>
+                    <div class="one">
+                      <button id="statusButtonOne" onclick="colorChange(2)"></button>
+                    </div>
+                    <div class="two">
+                      <button id="statusButtonTwo" onclick="colorChange(1)">
+                    </div>
+                    <div class="three">
+                      <button id="statusButtonThree" onclick="colorChange(0)">
+                    </div>
                   </div>
                 </div>
               </div>
@@ -204,24 +217,48 @@
   </body>
   <script>
     var status = 0;
-    function statusPress() {
-      switch (parseInt(status)) {
+    function colorChange(value){
+      showButton();
+      switch (value) {
         case 0:
-          status++;
-          $("#statusButton").css("background-color", "#FF0000");
+          $(".dropbtn").css("background-color", "#FF0000");
           break;
         case 1:
-          status++;
-          $("#statusButton").css("background-color", "#FFFF00");
+          $(".dropbtn").css("background-color", "#FFFF00");
           break;
         case 2:
-          status++;
-          $("#statusButton").css("background-color", "#32CD32");
+          $(".dropbtn").css("background-color", "#32CD32");
           break;
         default:
-          status = 0;
-          $("#statusButton").css("background-color", "white");
+          $(".dropbtn").css("background-color", "white");
       }
     }
+
+    function showButton(){
+      $('.one').toggle();
+      $('.two').toggle();
+      $('.three').toggle();
+      $(".dropbtn").css("background-color", "white");
+
+    }
+    // function statusPress() {
+    //   switch (parseInt(status)) {
+    //     case 0:
+    //       status++;
+    //       $(".dropbtn").css("background-color", "#FF0000");
+    //       break;
+    //     case 1:
+    //       status++;
+    //       $(".dropbtn").css("background-color", "#FFFF00");
+    //       break;
+    //     case 2:
+    //       status++;
+    //       $(".dropbtn").css("background-color", "#32CD32");
+    //       break;
+    //     default:
+    //       status = 0;
+    //       $(".dropbtn").css("background-color", "white");
+    //   }
+    // }
   </script>
 </html>
